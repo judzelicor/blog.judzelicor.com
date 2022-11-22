@@ -513,7 +513,9 @@ p {
 
 .articleTitle__hp-Xl4r {
     font-size: 1.2rem;
+    line-height: 1.5;
     margin-left: 0.75rem;
+    max-width: 480px;
 }
 
 .articleDescription__hp-Xl4r {
@@ -547,7 +549,7 @@ p {
 
 @media only screen and (min-width: 768px) {
     .articleHeaderWrapper__hp-Xl4r {
-        align-items: center;
+        align-items: flex-start;
         flex-direction: row;
         justify-content: space-between;
     } 
