@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/global.css">
+</head>
+
+<body>
+    <div class="siteWrapper__hp-0kLg">
+        <header class="navigationBarHeader__hp-Xl4r">
+            <div class="menuToggler__hp-Xl4r">
+                <svg class="menuTogglerIcon__hp-Xl4r" viewBox="0 0 24 12">
+                    <rect width="24" height="2"></rect>
+                    <rect y="5" width="24" height="2"></rect>
+                    <rect y="10" width="24" height="2"></rect>
+                </svg>
+            </div>
+            <nav class="navigationBarMenu__hp-Xl4r">
+                <ul class="navigationBarMenuList__hp-Xl4r">
+                    <li>
+                        <a class="navigationBarLink__hp-Xl4r active" href="/">Home</a>
+                    </li>
+                    <li>
+                        <a class="navigationBarLink__hp-Xl4r" href="https://judzelicor.com" target="_blank">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="navigationBarLink__hp-Xl4r" href="/">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="siteSkinToggler__hp-y6Fs">
+                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 512 512">
+                    <circle cx="256" cy="256" r="128" fill="#f9dc5c" data-original="#000000" />
+                    <path fill="#f9dc5c"
+                        d="M256 76.791c-14.137 0-25.6-11.463-25.6-25.6V25.6C230.4 11.463 241.863 0 256 0s25.6 11.463 25.6 25.6v25.591c0 14.137-11.463 25.6-25.6 25.6zm144.825 59.987c-6.55 0-13.1-2.497-18.1-7.494-10-9.994-10-26.203-.012-36.203L400.8 74.984c10-10 26.212-10.003 36.212-.009s10 26.203.012 36.203l-18.088 18.097c-4.998 5.003-11.561 7.503-18.111 7.503zM486.4 281.6h-25.588c-14.137 0-25.6-11.463-25.6-25.6s11.463-25.6 25.6-25.6H486.4c14.137 0 25.6 11.463 25.6 25.6s-11.463 25.6-25.6 25.6zm-67.487 162.919c-6.55 0-13.112-2.5-18.113-7.503l-18.088-18.097c-9.988-10-9.988-26.209.012-36.203s26.212-9.997 36.212.009l18.088 18.097c9.988 10 9.988 26.209-.012 36.203a25.521 25.521 0 0 1-18.099 7.494zM256 512c-14.137 0-25.6-11.463-25.6-25.6v-25.591c0-14.137 11.463-25.6 25.6-25.6s25.6 11.463 25.6 25.6V486.4c0 14.137-11.463 25.6-25.6 25.6zM93.087 444.519c-6.55 0-13.1-2.497-18.1-7.494-10-9.994-10-26.203-.012-36.203l18.088-18.097c10-10.006 26.213-10.003 36.213-.009s10 26.203.012 36.203L111.2 437.016c-5 5-11.563 7.503-18.113 7.503zM51.188 281.6H25.6C11.463 281.6 0 270.137 0 256s11.463-25.6 25.6-25.6h25.588c14.137 0 25.6 11.463 25.6 25.6s-11.463 25.6-25.6 25.6zm59.987-144.822c-6.55 0-13.112-2.5-18.113-7.503l-18.088-18.097c-9.988-10-9.988-26.209.012-36.203s26.213-9.997 36.213.009l18.088 18.097c9.988 10 9.988 26.209-.012 36.203a25.523 25.523 0 0 1-18.1 7.494z"
+                        data-original="#000000" />
+                </svg>
+            </div>
+        </header>
+        <div style="margin: 3rem 0 4rem 0;">
+            <h1 class="pageTitle__hp-Xl4r">Judz Philip Elicor</h1>
+            <p class="heroDescription__hp-Xl4r">
+                Judz is a front-end web developer, indie game developer, aspiring software developer, fiction writer,
+                science nerd, and a lover of cats
+                whom ironically does not own a cat! He is an enthusiastic, cosmic bipedal who loves to learn and take on
+                new challenges. Here is his
+                humble space on the world wide web where he shares what he's learning about himself, his works, and the world around him.
+            </p>
+            <p style="margin-bottom: 1rem;">Thank you for stopping by!</p>
+        </div>
+        <section class="articleSection__hp-Xl4r">
+            <h2 class="recentArticleSectionHeading__hp-Xl4r">Recent Articles</h2>
+            {% for post in site.posts %}
+                <a href="{{ post.url }}" title="{{ post.title }}">
+                    <article class="articleListItem__hp-Xl4r">
+                        <div class="articleHeaderWrapper__hp-Xl4r">
+                            <div style="display: flex; align-items: center;">
+                                <div style="width: 14px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+                                        <path fill="#404040"
+                                            d="M2.917 0H.583A.584.584 0 0 0 0 .583v2.334c0 .322.261.583.583.583h2.334a.584.584 0 0 0 .583-.583V.583A.584.584 0 0 0 2.917 0Zm0 5.25H.583A.584.584 0 0 0 0 5.833v2.334c0 .322.261.583.583.583h2.334a.584.584 0 0 0 .583-.583V5.833a.584.584 0 0 0-.583-.583Zm0 5.25H.583a.584.584 0 0 0-.583.583v2.334c0 .322.261.583.583.583h2.334a.584.584 0 0 0 .583-.583v-2.334a.584.584 0 0 0-.583-.583ZM8.167 0H5.833a.584.584 0 0 0-.583.583v2.334c0 .322.261.583.583.583h2.334a.584.584 0 0 0 .583-.583V.583A.584.584 0 0 0 8.167 0Zm0 5.25H5.833a.584.584 0 0 0-.583.583v2.334c0 .322.261.583.583.583h2.334a.584.584 0 0 0 .583-.583V5.833a.584.584 0 0 0-.583-.583Zm0 5.25H5.833a.584.584 0 0 0-.583.583v2.334c0 .322.261.583.583.583h2.334a.584.584 0 0 0 .583-.583v-2.334a.584.584 0 0 0-.583-.583ZM13.417 0h-2.334a.584.584 0 0 0-.583.583v2.334c0 .322.261.583.583.583h2.334A.584.584 0 0 0 14 2.917V.583A.584.584 0 0 0 13.417 0Zm0 5.25h-2.334a.584.584 0 0 0-.583.583v2.334c0 .322.261.583.583.583h2.334A.584.584 0 0 0 14 8.167V5.833a.584.584 0 0 0-.583-.583Zm0 5.25h-2.334a.584.584 0 0 0-.583.583v2.334c0 .322.261.583.583.583h2.334a.584.584 0 0 0 .583-.583v-2.334a.584.584 0 0 0-.583-.583Z" />
+                                    </svg>
+                                </div>
+                                <h2 class="articleTitle__hp-Xl4r">
+                                        {{ post.title }}
+                                    </h2>
+                                </div>
+                                <div style="display: flex; align-items: center;">
+                                    <div style="width: 14px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 13">
+                                            <g fill="#404040">
+                                                <path
+                                                d="M.41 9.844h10.719a.41.41 0 0 0 .263-.095c.102-.086 2.451-2.106 2.594-6.468H2.474C2.331 7.241.168 9.101.146 9.12a.411.411 0 0 0 .264.724ZM13.59.82h-2.051V.41c0-.23-.18-.41-.41-.41-.23 0-.41.18-.41.41v.41H8.64V.41c0-.23-.18-.41-.41-.41-.23 0-.41.18-.41.41v.41H5.77V.41c0-.23-.181-.41-.411-.41-.23 0-.41.18-.41.41v.41H2.898c-.23 0-.41.18-.41.41v1.231H14v-1.23c0-.23-.18-.41-.41-.41Z" />
+                                                <path
+                                                d="M11.918 10.378a1.234 1.234 0 0 1-.79.287h-8.64v1.23c0 .227.183.41.41.41H13.59a.41.41 0 0 0 .41-.41V7.297c-.79 1.94-1.894 2.924-2.082 3.081Z" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <p class="articleDateData__hp-Xl4r">
+                                        <time datetime="{{ post.date | date: " %Y-%m-%d" }}">{{ post.date | date_to_long_string}}</time>
+                                    </p>
+                                </div>
+                            </div>
+                        <p class="articleDescription__hp-Xl4r">{{ post.description }}</p>
+                        <ul>
+                            {% for category in post.categories %}
+                                <li>
+                                    <a class="categoryLabel__hp-Xl4r" href="/{{ category }}" data-category="{{ category }}">{{ category }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </article>
+                </a>
+            {% endfor %}
+        </section>
+    </div>
+</body>
+
+</html>
